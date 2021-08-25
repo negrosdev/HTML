@@ -1,0 +1,138 @@
+:root {
+  --global-font-size  : 15px;
+  --global-line-height: 1.4em;
+  --global-space      : 10px;
+  --font-stack        : Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+    serif;
+  --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+    serif;
+  --background-color       : #222225;
+  --page-width             : 60em;
+  --font-color             : #e8e9ed;
+  --invert-font-color      : #222225;
+  --secondary-color        : #a3abba;
+  --tertiary-color         : #a3abba;
+  --primary-color          : #62c4ff;
+  --error-color            : #ff3c74;
+  --progress-bar-background: #3f3f44;
+  --progress-bar-fill      : #62c4ff;
+  --code-bg-color          : #3f3f44;
+  --input-style            : solid;
+  --display-h1-decoration  : none;
+}
+
+.terminal-section {
+  padding: 3rem 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .terminal-section.is-medium {
+    padding: 9rem 1.5rem;
+  }
+
+  .terminal-section.is-large {
+    padding: 18rem 1.5rem;
+  }
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.btn.btn-lg {
+  padding: .9em 2em;
+}
+
+.terminal-margin {
+  margin-bottom: 20px;
+}
+
+*+.terminal-margin {
+  margin-top: 20px !important;
+}
+
+.terminal-margin-top {
+  margin-top: 20px !important;
+}
+
+.terminal-margin-bottom {
+  margin-bottom: 20px !important;
+}
+
+.terminal-margin-left {
+  margin-left: 20px !important;
+}
+
+.terminal-margin-right {
+  margin-right: 20px !important;
+}
+
+
+.terminal-margin-large {
+  margin-bottom: 40px;
+}
+
+*+.terminal-margin-large {
+  margin-top: 40px !important;
+}
+
+.terminal-margin-large-top {
+  margin-top: 40px !important;
+}
+
+.terminal-margin-large-bottom {
+  margin-bottom: 40px !important;
+}
+
+.terminal-margin-large-left {
+  margin-left: 40px !important;
+}
+
+.terminal-margin-large-right {
+  margin-right: 40px !important;
+}
+
+/* Desktop and bigger */
+@media (min-width: 1200px) {
+  .terminal-margin-large {
+    margin-bottom: 70px;
+  }
+
+  *+.terminal-margin-large {
+    margin-top: 70px !important;
+  }
+
+  .terminal-margin-large-top {
+    margin-top: 70px !important;
+  }
+
+  .terminal-margin-large-bottom {
+    margin-bottom: 70px !important;
+  }
+
+  .terminal-margin-large-left {
+    margin-left: 70px !important;
+  }
+
+  .terminal-margin-large-right {
+    margin-right: 70px !important;
+  }
+}
+
+/* search form */
+
+#search div.row {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+#search div div:first-child {
+  flex: 1;
+}
