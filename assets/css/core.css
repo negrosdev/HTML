@@ -393,6 +393,20 @@ print {
   margin-top           : 100px;
 }
 
+@media screen and (max-width: 768px) {
+  #sponsors a:nth-child(1) img {
+    width: 90px !important;
+  }
+  
+  #sponsors a:nth-child(2) img {
+    width: 60px !important;
+  }
+  
+  #sponsors a:nth-child(3) img {
+    width: 100px !important;
+  }
+}
+
 #sponsors a:nth-child(1) img {
   width: 120px;
 }
