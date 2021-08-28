@@ -393,15 +393,22 @@ print {
   margin-top           : 100px;
 }
 
+.grid {
+  display              : grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap             : 5em;
+
+}
+
 @media screen and (max-width: 768px) {
   #sponsors a:nth-child(1) img {
     width: 90px !important;
   }
-  
+
   #sponsors a:nth-child(2) img {
     width: 60px !important;
   }
-  
+
   #sponsors a:nth-child(3) img {
     width: 100px !important;
   }
@@ -426,4 +433,12 @@ print {
 /* footer */
 footer ul li {
   display: inline-block;
+}
+
+/* content page */
+#creator img {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50%;
+  vertical-align: middle;
 }
