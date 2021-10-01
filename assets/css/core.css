@@ -437,8 +437,8 @@ footer ul li {
 
 /* content page */
 #creator img {
-  width: 48px !important;
-  height: 48px !important;
-  border-radius: 50%;
+  width         : 48px !important;
+  height        : 48px !important;
+  border-radius : 50%;
   vertical-align: middle;
 }
