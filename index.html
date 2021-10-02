@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo.png" />
 
     <title>negros.dev</title>
@@ -40,7 +41,7 @@
             type="email"
             required=""
             minlength="5"
-            placeholder="O que você gostaria de aprender?"
+            placeholder="o que você gostaria de aprender?"
           />
         </div>
       </div>
@@ -49,7 +50,7 @@
         <h1>Conteúdos em vídeos</h1>
         <ol class="terminal-toc">
           <li>
-            <a>
+            <a href="/conteudo.html">
               <img
                 style="width: 20px !important; vertical-align: middle"
                 src="/assets/img/icons/adonis-js.svg"
@@ -60,7 +61,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a href="/conteudo.html">
               <img
                 style="width: 20px !important; vertical-align: middle"
                 src="/assets/img/icons/react.svg"
@@ -71,7 +72,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a href="/conteudo.html">
               <img
                 style="width: 20px !important; vertical-align: middle"
                 src="/assets/img/icons/django.svg"
@@ -80,7 +81,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a href="/conteudo.html">
               <img
                 style="width: 20px !important; vertical-align: middle"
                 src="/assets/img/icons/angular.svg"
@@ -91,7 +92,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a href="/conteudo.html">
               <img
                 style="width: 20px !important; vertical-align: middle"
                 src="/assets/img/icons/nuxt.svg"
@@ -112,19 +113,22 @@
 
       <section class="terminal-section is-medium" id="sponsors">
         <div class="container text-center">
-          <p class="is-size-4">Patrocínio</p>
-          <div class="image-grid">
-            <a href="https://caravana.cloud" target="_blank">
-              <img src="/assets/img/caravana.png" alt="" />
-            </a>
-            <a href="https://www.jetbrains.com/" target="_blank">
-              <img src="/assets/img/jetbrains.png" alt="" />
-            </a>
-
-            <a target="_blank">
-              <img src="/assets/img/do.svg" alt="" />
-            </a>
-          </div>
+          <h2>Patrocinadores</h2>
+          <ul>
+            <li>
+              <a href="https://caravana.cloud" target="_blank"
+                >Caravana Cloud</a
+              >
+            </li>
+            <li>
+              <a href="https://digitalocean.com" target="_blank"
+                >Digital Ocean</a
+              >
+            </li>
+            <li>
+              <a href="https://www.jetbrains.com/" target="_blank">Jetbrains</a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -132,12 +136,12 @@
     <footer
       class="container terminal-section terminal-margin-large-top text-center"
     >
-      <p>&copy; negros.dev todos os direitos reservados.</p>
-      <ul>
-        <li><a href="/licenca">licença</a></li>
-        <li><a href="/termos-de-uso">termos de uso</a></li>
-        <li><a href="/direitos-autorais">direitos autorais</a></li>
-      </ul>
+      <p>
+        &copy; negros.dev todos os direitos reservados. <br />
+        Licença: FreeBSD-3
+      </p>
     </footer>
+
+    <script src="/node_modules/alpinejs/dist/cdn.min.js"></script>
   </body>
 </html>
