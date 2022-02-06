@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Negros.dev - Somente Template*</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/uikit.min.css" />
+  <link rel="stylesheet" href="/assets/css/app.css" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <script defer src="/assets/js/uikit.min.js"></script>
+  <script defer src="/assets/js/uikit-icons.min.js"></script>
+</head>
+
+<body class="site">
+  <!-- menu -->
+  <div class="uk-navbar-container uk-navbar-transparent">
+    <div class="uk-container uk-container-xlarge">
+      <nav class="uk-navbar">
+
+        <div class="uk-navbar-left uk-hidden@m">
+          <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
+        </div>
+
+        <div class="uk-navbar-right uk-visible@m">
+          <div class="uk-navbar-item">
+            <a href="/apoiar.html" class="uk-button uk-button-circle uk-button-rose">Apoiar!</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+  <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+      <ul class="uk-nav uk-nav-default">
+        <li><a href="/">Home</a></li>
+      </ul>
+      <div class="uk-navbar-item">
+        <a href="/apoiar.html" class="uk-button uk-width-1-1@m uk-button-rose">Apoiar!</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- end menu -->
+
+  <main class="site-container">
+    <section class="uk-section">
+      <div class="uk-container uk-container-xlarge">
+        <div class="uk-child-width-1-1@m uk-text-large" uk-grid>
+          <div>
+            <div class="uk-child-width-1-2@m" uk-grid>
+              <div>
+                <h3 class="uk-margin-medium-bottom">Introdução a Linguagem Ruby</h3>
+              </div>
+              <div class="uk-text-right downloads">
+                <a href="#" class="uk-button uk-button-purple uk-icon">
+                  <i uk-icon="download"></i>
+                  <span>Código Fonte</span>
+                </a>
+                <a class="uk-button uk-button-rose uk-icon" negros-show="false">
+                  <i uk-icon="list"></i>
+                  <span>Playlist</span>
+                </a>
+              </div>
+            </div>
+            <div uk-grid class="uk-grid-match ">
+              <div class="uk-width-expand@m">
+                <div class="uk-card uk-card-body uk-padding-remove">
+                  <video class="uk-background-rose" controls width="100%" height="780px">
+                    <source src="https://storage.negros.dev/poetry.mp4" type="video/mp4">
+                    <track label="English" kind="subtitles" srclang="en" src="captions/vtt/sintel-en.vtt" default>
+                    <track label="Deutsch" kind="subtitles" srclang="de" src="captions/vtt/sintel-de.vtt">
+                    <track label="Español" kind="subtitles" srclang="es" src="captions/vtt/sintel-es.vtt">
+                  </video>
+                </div>
+              </div>
+              <div class="uk-width-1-4@m uk-display-none" id="playlist">
+                <div class="uk-card uk-card-body">
+                  <ul class="uk-list uk-list-divider">
+                    <li>
+                      <a href="#" class="uk-link-reset">
+                        <span>01. Introdução</span>
+                      </a>
+                    </li>                      
+                    <li>
+                      <a href="#" class="uk-link-reset">
+                        <span>02. Criando Componente</span>
+                      </a>
+                    </li>                      
+                    <li>
+                      <a href="#" class="uk-link-reset">
+                        <span>03. Introdução</span>
+                      </a>
+                    </li>                      
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="uk-padding uk-margin-large-top">
+    <div class="uk-text-center uk-text-large">
+      <p>Desenvolvido por <a href="https://marcuspereira.xyz" target="_blank"><strong class="uk-text-white">Marcus
+            Pereira</strong></a> para todos.</p>
+      <p>Tem dúvidas de como funciona a plataforma? Consulte a página de <strong>perguntas & respostas</strong>.</p>
+
+      <a href="https://www.netlify.com" target="_blank" class="uk-link-reset sponsor">
+        <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Deploys by Netlify" />
+      </a>
+
+      <a href="https://gitlab.com/marcusxyz/negros-dev-template" target="_blank" class="uk-link-reset sponsor">
+        <img src="/assets/img/gitlab.svg" width="70" alt="Repo in Gitlab" />
+      </a>
+
+    </div>
+  </footer>
+
+  <script>
+    const playlist = document.getElementById("playlist");
+
+    document.querySelector("a[negros-show]").addEventListener("click", (ev) => {
+      if(playlist.classList.contains("uk-display-none")) {
+        playlist.classList.remove("uk-display-none")
+      }
+      else {
+        playlist.classList.add("uk-display-none")
+      }
+    });
+
+  </script>
+</body>
+
+</html>

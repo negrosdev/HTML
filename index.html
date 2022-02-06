@@ -1,147 +1,249 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html>
 
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo.png" />
+<head>
+  <title>Negros.dev - Somente Template*</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/uikit.min.css" />
+  <link rel="stylesheet" href="/assets/css/app.css" />
 
-    <title>negros.dev</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css"
-    />
-    <link rel="stylesheet" href="/assets/css/core.css" />
-  </head>
-  <body class="site terminal">
-    <div class="container">
-      <div class="terminal-nav">
-        <div class="terminal-logo">
-          <div class="logo terminal-prompt">
-            <a href="/" class="no-style">negros.dev</a>
-          </div>
+  <script defer src="/assets/js/uikit.min.js"></script>
+  <script defer src="/assets/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+  <!-- menu -->
+  <div class="uk-container uk-container-xlarge">
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+      <div class="uk-navbar-left uk-hidden@m">
+        <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
+      </div>
+
+      <div class="uk-navbar-right uk-visible@m">
+        <div class="uk-navbar-item">
+          <a href="/apoiar.html" class="uk-button uk-button-circle uk-button-rose">Apoiar!</a>
         </div>
-        <nav class="terminal-menu">
-          <ul>
-            <li><a class="menu-item" href="/blog">blog</a></li>
-            <li><a class="menu-item" href="#">comunidade</a></li>
-          </ul>
-        </nav>
+      </div>
+    </nav>
+  </div>
+
+  <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+      <ul class="uk-nav uk-nav-default">
+        <li class="uk-active"><a href="/">Home</a></li>
+      </ul>
+      <div class="uk-navbar-item">
+        <a href="/apoiar.html" class="uk-button uk-width-1-1@m uk-button-rose">Apoiar!</a>
       </div>
     </div>
+  </div>
 
-    <main class="site-container">
-      <div class="container terminal-margin-large-top">
-        <div class="form-group">
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required=""
-            minlength="5"
-            placeholder="o que você gostaria de aprender?"
-          />
+  <!-- end menu -->
+
+  <section class="uk-section " id="welcome">
+    <div class="uk-container uk-container-xlarge">
+      <div uk-grid class="uk-child-width-1-1@m">
+        <div>
+          <h1 class="uk-light uk-text-center">Boas-vindas!</h1>
+          </p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <section class="container terminal-margin-large-top">
-        <h1>Conteúdos em vídeos</h1>
-        <ol class="terminal-toc">
-          <li>
-            <a href="/conteudo.html">
-              <img
-                style="width: 20px !important; vertical-align: middle"
-                src="/assets/img/icons/adonis-js.svg"
-              />
-              <span style="vertical-align: middle"
-                >Validando dados no AdonisJS</span
-              >
-            </a>
-          </li>
-          <li>
-            <a href="/conteudo.html">
-              <img
-                style="width: 20px !important; vertical-align: middle"
-                src="/assets/img/icons/react.svg"
-              />
-              <span style="vertical-align: middle"
-                >Diferença entre componente de classe e função</span
-              >
-            </a>
-          </li>
-          <li>
-            <a href="/conteudo.html">
-              <img
-                style="width: 20px !important; vertical-align: middle"
-                src="/assets/img/icons/django.svg"
-              />
-              <span style="vertical-align: middle">A essência do Django</span>
-            </a>
-          </li>
-          <li>
-            <a href="/conteudo.html">
-              <img
-                style="width: 20px !important; vertical-align: middle"
-                src="/assets/img/icons/angular.svg"
-              />
-              <span style="vertical-align: middle"
-                >Criando webcomponentes com Angular 10</span
-              >
-            </a>
-          </li>
-          <li>
-            <a href="/conteudo.html">
-              <img
-                style="width: 20px !important; vertical-align: middle"
-                src="/assets/img/icons/nuxt.svg"
-              />
-              <span style="vertical-align: middle">Hello, Nuxt!</span>
-            </a>
-          </li>
-        </ol>
-        <div class="text-right terminal-margin-large-top">
-          <a href="/conteudos">1</a>
-          <a href="/conteudos">2</a>
-          <a href="/conteudos">3</a>
-          <a href="/conteudos">4</a>
-          <a href="/conteudos">5</a>
-          <a href="/conteudos">...</a>
+
+  <section class="uk-section courses">
+    <div class="uk-container uk-container-xlarge">
+      <div class="uk-child-width-1-4@m uk-grid-match uk-grid-large" uk-grid>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="assistir.html">
+            <div>
+              <img src="/assets/img/8.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Matheus Santos</p>
+            </div>
+            <h1 class="uk-card-title">Criando Websites Com Flask</h1>
+          </a>
         </div>
-      </section>
-
-      <section class="terminal-section is-medium" id="sponsors">
-        <div class="container text-center">
-          <h2>Patrocinadores</h2>
-          <ul>
-            <li>
-              <a href="https://caravana.cloud" target="_blank"
-                >Caravana Cloud</a
-              >
-            </li>
-            <li>
-              <a href="https://digitalocean.com" target="_blank"
-                >Digital Ocean</a
-              >
-            </li>
-            <li>
-              <a href="https://www.jetbrains.com/" target="_blank">Jetbrains</a>
-            </li>
-          </ul>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="assistir.html">
+            <div>
+              <img src="/assets/img/2.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="auto">
+              <p>Mike Lanne</p>
+            </div>
+            <h1 class="uk-card-title">Introdução ao Ruby</h1>
+          </a>
         </div>
-      </section>
-    </main>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="assistir.html">
+            <div>
+              <img src="/assets/img/7.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Pedro Silva</p>
+            </div>
+            <h1 class="uk-card-title">Instalando Docker no Arch Linux</h1>
+          </a>
+        </div>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="assistir.html">
+            <div>
+              <img src="/assets/img/4.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Luciana Martins</p>
+            </div>
+            <h1 class="uk-card-title">Criando Apis Com Golang</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer
-      class="container terminal-section terminal-margin-large-top text-center"
-    >
-      <p>
-        &copy; negros.dev todos os direitos reservados. <br />
-        Licença: FreeBSD-3
-      </p>
-    </footer>
+  <section class="uk-section uk-section-dark uk-text-center">
+    <div class="uk-container uk-container-small">
+      <div class="uk-child-width-1-1@m" uk-grid>
+        <div>
+          <p class="uk-text-large uk-light">
+            O lugar de fala das pessoas <span class="uk-text-rose uk-text-bold">pretas</span> e <span
+              class="uk-text-rose uk-text-bold">desenvolvedoras</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="/node_modules/alpinejs/dist/cdn.min.js"></script>
-  </body>
+  <section class="uk-section uk-section-large courses">
+    <div class="uk-container uk-container-xlarge">
+      <div class="uk-child-width-1-4@m uk-grid-match uk-grid-large" uk-grid>
+
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="assistir.html">
+            <div>
+              <img src="/assets/img/3.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Nanda Moreira</p>
+            </div>
+            <h1 class="uk-card-title">Criando Websites Com Flask</h1>
+          </a>
+        </div>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="assistir.html">
+            <div>
+              <img src="/assets/img/marcus.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Marcus Pereira</p>
+            </div>
+            <h1 class="uk-card-title">Introdução ao Ruby</h1>
+          </a>
+        </div>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="assistir.html">
+            <div>
+              <img src="/assets/img/6.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Lucas Vintage</p>
+            </div>
+            <h1 class="uk-card-title">Instalando Docker no Arch Linux</h1>
+          </a>
+        </div>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="assistir.html">
+            <div>
+              <img src="/assets/img/5.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Fernando Cassio</p>
+            </div>
+            <h1 class="uk-card-title">Criando Apis Com Golang</h1>
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <section class="uk-section uk-section-dark uk-text-center">
+    <div class="uk-container uk-container-small">
+      <div class="uk-child-width-1-1@m" uk-grid>
+        <div>
+          <p class="uk-light uk-text-large">
+            Lutamos pela <span class="uk-text-rose uk-text-bold">saúde mental<span> e <span
+                  class="uk-text-rose uk-text-bold"> pela força de trabalho</span> das
+                pessoas
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="uk-section uk-section-large">
+    <div class="uk-container uk-container-xlarge">
+      <div class="uk-child-width-1-4@m uk-grid-match uk-grid-large" uk-grid>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="assistir.html">
+            <div>
+              <img src="/assets/img/3.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Nanda Moreira</p>
+            </div>
+            <h1 class="uk-card-title">Criando Websites Com Flask</h1>
+          </a>
+        </div>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="assistir.html">
+            <div>
+              <img src="/assets/img/marcus.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Marcus Pereira</p>
+            </div>
+            <h1 class="uk-card-title">Introdução ao Ruby</h1>
+          </a>
+        </div>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="assistir.html">
+            <div>
+              <img src="/assets/img/6.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Lucas Vintage</p>
+            </div>
+            <h1 class="uk-card-title">Instalando Docker no Arch Linux</h1>
+          </a>
+        </div>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="assistir.html">
+            <div>
+              <img src="/assets/img/5.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Fernando Cassio</p>
+            </div>
+            <h1 class="uk-card-title">Criando Apis Com Golang</h1>
+          </a>
+        </div>
+      </div>
+  </section>
+
+
+  <footer class=" uk-padding uk-margin-large-top">
+    <div class="uk-text-center uk-text-large">
+      <p>Desenvolvido por <a href="https://marcuspereira.xyz" target="_blank"><strong class="uk-text-white">Marcus
+            Pereira</strong></a> para todos.</p>
+      <p>Tem dúvidas de como funciona a plataforma? Consulte a página de <strong>perguntas & respostas</strong>.</p>
+
+
+      <a href="https://www.netlify.com" target="_blank" class="uk-link-reset sponsor">
+        <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Deploys by Netlify" />
+      </a>
+
+      <a href="https://gitlab.com/marcusxyz/negros-dev-template" target="_blank" class="uk-link-reset sponsor">
+        <img src="/assets/img/gitlab.svg" width="70" alt="Repo in Gitlab" />
+      </a>
+
+    </div>
+  </footer>
+
+  </div>
+</body>
+
 </html>
