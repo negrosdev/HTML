@@ -18,6 +18,7 @@
   },
   "homepage": "https://gitlab.com/marcusxyz/negros-dev-template#readme",
   "dependencies": {
-    "serve": "^11.3.2"
+    "serve": "^11.3.2",
+    "uikit": "^3.10.1"
   }
 }

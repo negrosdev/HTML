@@ -18,19 +18,27 @@
 
 <body>
   <!-- menu -->
-  <div class="uk-container uk-container-xlarge">
-    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-background-secondary">
+    <div class="uk-container uk-container-xlarge">
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
-      <div class="uk-navbar-left uk-hidden@m">
-        <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
-      </div>
-
-      <div class="uk-navbar-right uk-visible@m">
-        <div class="uk-navbar-item">
-          <a href="/apoiar.html" class="uk-button uk-button-circle uk-button-rose">Apoiar!</a>
+        <div class="uk-navbar-left uk-visible@m">
+          <a class="uk-navbar-item uk-logo uk-text-white" href="/">
+            <img src="/assets/img/logo.png" alt="">
+          </a>
         </div>
-      </div>
-    </nav>
+
+        <div class="uk-navbar-left uk-hidden@m">
+          <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
+        </div>
+
+        <div class="uk-navbar-right uk-visible@m">
+          <div class="uk-navbar-item">
+            <a href="/apoiar.html" class="uk-button uk-button-circle uk-button-rose">Apoiar!</a>
+          </div>
+        </div>
+      </nav>
+    </div>
   </div>
 
   <div id="offcanvas-nav" uk-offcanvas="overlay: true">
@@ -43,27 +51,28 @@
       </div>
     </div>
   </div>
-
   <!-- end menu -->
 
-  <section class="uk-section " id="welcome">
-    <div class="uk-container uk-container-xlarge">
-      <div uk-grid class="uk-child-width-1-1@m">
-        <div>
-          <h1 class="uk-light uk-text-center">Boas-vindas!</h1>
-          </p>
+  <section class="uk-section">
+    <div class="uk-container uk-container-xlarge uk-text-center">
+      <div class="uk-width-expand@m">
+        <div class="uk-card uk-card-body uk-card-shaped uk-padding-remove">
+          <div style="padding:52.73% 0 0 0;position:relative;"><iframe
+              src="https://player.vimeo.com/video/490314045?h=49db36cd8f&title=0&byline=0&portrait=0"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
       </div>
     </div>
   </section>
 
-
-  <section class="uk-section courses">
+  <section class="uk-section uk-section-large courses">
     <div class="uk-container uk-container-xlarge">
-      <div class="uk-child-width-1-4@m uk-grid-match uk-grid-large" uk-grid>
+      <div class="uk-child-width-1-4@m uk-grid-match uk-grid-large uk-margin-large-top" uk-grid>
         <div>
           <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="assistir.html">
+            href="#modal-media-vimeo" uk-toggle>
             <div>
               <img src="/assets/img/8.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
               <p>Matheus Santos</p>
@@ -73,7 +82,7 @@
         </div>
         <div>
           <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="assistir.html">
+            href="#modal-media-vimeo" uk-toggle>
             <div>
               <img src="/assets/img/2.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="auto">
               <p>Mike Lanne</p>
@@ -83,7 +92,7 @@
         </div>
         <div>
           <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="assistir.html">
+            href="#modal-media-vimeo" uk-toggle>
             <div>
               <img src="/assets/img/7.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
               <p>Pedro Silva</p>
@@ -93,12 +102,12 @@
         </div>
         <div>
           <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="assistir.html">
+            href="#modal-media-vimeo" uk-toggle>
             <div>
-              <img src="/assets/img/4.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
-              <p>Luciana Martins</p>
+              <img src="/assets/img/8.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Matheus Santos</p>
             </div>
-            <h1 class="uk-card-title">Criando Apis Com Golang</h1>
+            <h1 class="uk-card-title">Criando Websites Com Flask</h1>
           </a>
         </div>
       </div>
@@ -109,7 +118,7 @@
     <div class="uk-container uk-container-small">
       <div class="uk-child-width-1-1@m" uk-grid>
         <div>
-          <p class="uk-text-large uk-light">
+          <p class="uk-text-large  uk-text-white">
             O lugar de fala das pessoas <span class="uk-text-rose uk-text-bold">pretas</span> e <span
               class="uk-text-rose uk-text-bold">desenvolvedoras</span></p>
         </div>
@@ -119,11 +128,10 @@
 
   <section class="uk-section uk-section-large courses">
     <div class="uk-container uk-container-xlarge">
-      <div class="uk-child-width-1-4@m uk-grid-match uk-grid-large" uk-grid>
-
+      <div class="uk-child-width-1-4@m uk-grid-match uk-grid-large uk-margin-large-top" uk-grid>
         <div>
           <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="assistir.html">
+            href="#modal-media-vimeo" uk-toggle>
             <div>
               <img src="/assets/img/3.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
               <p>Nanda Moreira</p>
@@ -133,7 +141,7 @@
         </div>
         <div>
           <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="assistir.html">
+            href="#modal-media-vimeo" uk-toggle>
             <div>
               <img src="/assets/img/marcus.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
               <p>Marcus Pereira</p>
@@ -143,7 +151,47 @@
         </div>
         <div>
           <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="assistir.html">
+            href="#modal-media-vimeo" uk-toggle>
+            <div>
+              <img src="/assets/img/4.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Luciana Martins</p>
+            </div>
+            <h1 class="uk-card-title">Criando Apis Com Golang</h1>
+          </a>
+        </div>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="#modal-media-vimeo" uk-toggle>
+            <div>
+              <img src="/assets/img/5.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Fernando Cassio</p>
+            </div>
+            <h1 class="uk-card-title">Criando Apis Com Golang</h1>
+          </a>
+        </div>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="#modal-media-vimeo" uk-toggle>
+            <div>
+              <img src="/assets/img/3.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Nanda Moreira</p>
+            </div>
+            <h1 class="uk-card-title">Criando Websites Com Flask</h1>
+          </a>
+        </div>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="#modal-media-vimeo" uk-toggle>
+            <div>
+              <img src="/assets/img/marcus.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
+              <p>Marcus Pereira</p>
+            </div>
+            <h1 class="uk-card-title">Introdução ao Ruby</h1>
+          </a>
+        </div>
+        <div>
+          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
+            href="#modal-media-vimeo" uk-toggle>
             <div>
               <img src="/assets/img/6.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
               <p>Lucas Vintage</p>
@@ -153,7 +201,7 @@
         </div>
         <div>
           <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="assistir.html">
+            href="#modal-media-vimeo" uk-toggle>
             <div>
               <img src="/assets/img/5.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
               <p>Fernando Cassio</p>
@@ -164,82 +212,48 @@
       </div>
   </section>
 
-  <section class="uk-section uk-section-dark uk-text-center">
+  <div id="modal-media-vimeo" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+      <button class="uk-modal-close-outside" type="button" uk-close></button>
+      <iframe src="https://player.vimeo.com/video/490314045?h=49db36cd8f&title=0&byline=0&portrait=0" width="1920"
+        height="1014" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <section class="uk-section uk-section-large uk-section-dark uk-text-center">
     <div class="uk-container uk-container-small">
       <div class="uk-child-width-1-1@m" uk-grid>
         <div>
-          <p class="uk-light uk-text-large">
-            Lutamos pela <span class="uk-text-rose uk-text-bold">saúde mental<span> e <span
-                  class="uk-text-rose uk-text-bold"> pela força de trabalho</span> das
-                pessoas
+          <h2>Empresas patrocinadoras</h2>
+
+
+          <p class="uk-flex uk-flex-between uk-margin-large-top sponsor">
+
+            <a href="https://gitlab.com/marcusxyz/negros-dev-template" target="_blank" class="uk-link-reset sponsor">
+              <img src="/assets/img/caravana_cloud.png" alt="Repo in Gitlab" />
+            </a>
+            <a href="https://gitlab.com/marcusxyz/negros-dev-template" target="_blank" class="uk-link-reset sponsor">
+              <img src="/assets/img/digital_ocean.png" alt="Repo in Gitlab" />
+            </a>
+
+            <a href="https://gitlab.com/marcusxyz/negros-dev-template" target="_blank" class="uk-link-reset sponsor">
+              <img src="/assets/img/jb_beam.png" alt="Repo in Gitlab" />
+            </a>
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="uk-section uk-section-large">
-    <div class="uk-container uk-container-xlarge">
-      <div class="uk-child-width-1-4@m uk-grid-match uk-grid-large" uk-grid>
-        <div>
-          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="assistir.html">
-            <div>
-              <img src="/assets/img/3.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
-              <p>Nanda Moreira</p>
-            </div>
-            <h1 class="uk-card-title">Criando Websites Com Flask</h1>
-          </a>
-        </div>
-        <div>
-          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="assistir.html">
-            <div>
-              <img src="/assets/img/marcus.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
-              <p>Marcus Pereira</p>
-            </div>
-            <h1 class="uk-card-title">Introdução ao Ruby</h1>
-          </a>
-        </div>
-        <div>
-          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="assistir.html">
-            <div>
-              <img src="/assets/img/6.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
-              <p>Lucas Vintage</p>
-            </div>
-            <h1 class="uk-card-title">Instalando Docker no Arch Linux</h1>
-          </a>
-        </div>
-        <div>
-          <a class="uk-display-block uk-link-toggle uk-card uk-card-secondary uk-card-body uk-text-center"
-            href="assistir.html">
-            <div>
-              <img src="/assets/img/5.jpg" class="uk-border-circle" alt="Marcus Pereira" width="80" height="80">
-              <p>Fernando Cassio</p>
-            </div>
-            <h1 class="uk-card-title">Criando Apis Com Golang</h1>
-          </a>
-        </div>
-      </div>
-  </section>
 
-
-  <footer class=" uk-padding uk-margin-large-top">
+  <footer class="uk-padding uk-margin-large-top">
     <div class="uk-text-center uk-text-large">
-      <p>Desenvolvido por <a href="https://marcuspereira.xyz" target="_blank"><strong class="uk-text-white">Marcus
-            Pereira</strong></a> para todos.</p>
-      <p>Tem dúvidas de como funciona a plataforma? Consulte a página de <strong>perguntas & respostas</strong>.</p>
-
-
-      <a href="https://www.netlify.com" target="_blank" class="uk-link-reset sponsor">
-        <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Deploys by Netlify" />
-      </a>
-
-      <a href="https://gitlab.com/marcusxyz/negros-dev-template" target="_blank" class="uk-link-reset sponsor">
-        <img src="/assets/img/gitlab.svg" width="70" alt="Repo in Gitlab" />
-      </a>
-
+      <p>&COPY; 2022 negros.dev</p>
+      <p class="uk-text-white">
+        Desenvolvido por <a href="https://github.com/marcuxyz" target="_blank"
+          class="uk-text-white uk-link-reset"><strong>Marcus
+            Pereira</strong></a> em algum lugar na capital de Salvador-ba.
+      </p>
     </div>
   </footer>
 
